@@ -9,6 +9,7 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Barlow">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
@@ -20,13 +21,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>KAI-LUN CHUNG</title>
 </head>
 
 <body style="height: 100%; font-family: 'Noto Sans TC';text-align: justify;" class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+        <div class="container" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine">
             <a class="navbar-brand" href="#"  style="letter-spacing:5px;">KAI-LUN CHUNG</a>
 
         </div>
@@ -34,14 +38,16 @@
     <div class="container bg-light mt-5   d-flex align-items-center">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
-                <div class="text-center ">
-                    <img src="images/head.jpg" style=" object-fit: cover;" alt=""
+                <div class="text-center "  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">
+                    <img src="images/head.jpg"style=" object-fit: cover;" alt="" 
                         class="rounded-circle border border-second border-2 h-75 w-75 shadow p-3 mb-5 ">
 
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
-                <h1>嗨！Hello</h1>
+            <div class="col-12 col-lg-6" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+                <h1  >嗨！Hello</h1>
                 <h4 style="letter-spacing:3px;">我是鐘凱倫</h4>
                 <p>畢業於朝陽科技大學，資訊管理系所碩士班，主要研究為影像辨識以及物件偵測，並對於前端、後端及資料庫開發都有經驗。</p>
                 <p>希望職稱：影像辨識工程師、物件偵測工程師、前端工程師、後端工程師</p>
@@ -58,21 +64,41 @@
     </div>
     <div class="container-fluid  bgBlack" style="background-image: url(images/bg1.jpg);">
         <div class="container py-3 text-light">
+            <div data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
             <h1 class="py-3" style="letter-spacing:5px;">自傳</h1>
-<h5>【個人特質】</h5>
-<p>我的個性積極、細心、抗壓性強、熱於挑戰，且能團隊合作，在學業表現上也有良好的成績。</p>
+        </div>
+            <div data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+            <h5>【個人特質】</h5>
+            <p>我的個性積極、細心、抗壓性強、熱於挑戰，且能團隊合作，在學業表現上也有良好的成績。</p>
+            </div>
+<div data-aos="fade-up"
+data-aos-easing="linear"
+data-aos-duration="1500">
 <h5>【學習歷程-大學】</h5>
 <p>在大學我是就讀資訊管理系多媒體組，這個結合了設計以及程式的班級，讓我擁有獨立開發網頁的能力、系統開發以及程式撰寫的能力，且能獨立開發一個系統。
    <br> 我們的專題-Gi-ELN 電子實驗記錄簿系統，目的是幫助實驗人員可以將實驗報告及數據自動寫入到系統裡，並且可以讓相關實驗人員可以互相分享彼此的實驗報告、數據，進一步提高了工作效率。
    <br> 由於同學們的推薦，讓我能擔任組長一職，我的組員共有五個人，我們使用Larave框架以及Swift開發，我主要負責的部分為 APP製作：用於實驗、審核人員可以在手機上快速檢視，即時收到實驗相關APP與Email通知。再來是修復、找尋系統漏洞，系統介面修改以及工作分配、進度追蹤。
    <br> 並且我們的專題亦榮獲資訊管理系專題展“第一名”、資訊學院專題展“第一名”。</p>  
-   <h5>【學習歷程-碩士】</h5>
+</div>
+<div data-aos="fade-up"
+data-aos-easing="linear"
+data-aos-duration="1000">
+<h5>【學習歷程-碩士】</h5>
    <p>為了能夠充實自己，在碩士一年級時，參加了一學年的校外實習，國家中山科學研究院台中園區，我主要負責運用ASP. NET開發軍事分析系統，以及運用MS SQL取得相關資料來做資料分析，並且以HTML, CSS, JavaScript, jQuery開發分析圖表以供軍事單位指揮官使用。 
 <br> 其中我為該系統主要開發人員，且需要與專案經理、SQL資料庫開發人員，和主系統開發人員開會討論，並將我開發的軍事分析系統合併到主系統裡。 也有與同事共同分析飛機機翼相關資料，主要使用Python、Pytorch進行資料分析。並且在裡面不斷地學習、請教前輩機器學習與影像辨識等技術，讓我能夠在我的研究上取得莫大的幫助。
   <br>  另外在實習結束前，我也製作了客製化的圖表資料匯入功能，以便利後續相關人員進行開發。
   <br>  實習一年結束後，在碩士二年級，由於在大學時期課程內容，一部分為設計，一部分為資訊方面的課程，因此我認為我的資訊能力沒有非常出眾，所以除了碩士的課程以外，我也會在課餘時間去額外上資訊相關的課程，例如：離散數學、機率與統計、微積分、演算法等…，且會買相關書籍回家自學。另外也藉此機會提升我的英文能力，目前多益成績580分，未來還會繼續研讀英文。
    <br> 我也擔任我指導教授的助教，因為我負責任、做事效率一流、細心，因此教授對我讚譽有佳。在這期間也沒有讓我的研究進度落後，在2022年8月1號如期畢業。</p>
-   <h5>【研究與發表】</h5>
+   
+</div>
+<div data-aos="fade-up"
+data-aos-easing="linear"
+data-aos-duration="1000">
+<h5>【研究與發表】</h5>
 <p>我的論文名稱為：水稻空拍影像植株定位與計數之YOLO輕量化研究
  <br>   我透過機器學習的技術運用YOLO模型，探究物件偵測技術，來完成水稻植株定位與計數，為了改善模型效能並深入研究YOLOv4架構並進行調整，藉此模型調整來減少訓練時間與減少模型計算量，進而達成輕量化模型之目的。
   <br>  並且發表了一篇國際論文-The Study of Light-weight YOLOv4 Model for Rice Seedling and Counting. 
@@ -89,29 +115,46 @@
        <li>小遊戲-數織小遊戲</li>
    </ul>
    <p>但這只是開始並不是結束，未來還會將我的能力應用在更多專案上！</p>
-<h5>【自我期許】</h5>
-<p>在未來我希望能夠在我的專業上做更深入的研究、並且提升自己的英文能力，相信以我的能力能夠在職場上發揮最大的功用！</p>
-
+</div>
+   <div data-aos="fade-up"
+   data-aos-easing="linear"
+   data-aos-duration="1000">
+   <h5>【自我期許】</h5>
+   <p>在未來我希望能夠在我的專業上做更深入的研究、並且提升自己的英文能力，相信以我的能力能夠在職場上發揮最大的功用！</p>
+   
+</div>
+<div data-aos="fade-up"
+data-aos-easing="linear"
+data-aos-duration="1000">
 <h5>【專業技能】</h5>
             <p>前端：#HTML #CSS #JavaScript</p>
             <p>後端：#Java #ASP.NET</p>
             <p>框架：#Vue #Laravel</p>
             <p>資料庫：#MSSQL</p>
             <p class="mb-5">AI：#YOLOv4 #YOLOv5 #OpenCV #Python</p>
+</div>
+
         </div>
 
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid mb-5">
         <div class="container py-2">
+            <div data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000">
             <h1 class="py-4" style="letter-spacing:5px;">學經歷</h1>
+        </div>
+            
             <div class="row">
                 <div class="col-12 ">
-                    <div class="timeline-section">
+                    <div class="timeline-section" >
                         <div class="timeline-pointer">
-                            <div class="row">
+                            <div class="row" data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h3 class=" m-2">2020/9-2022/8 朝陽科技大學資訊管理系所畢業</h3>
+                                    <h3 class=" m-2 mt-0 " >2020/9-2022/8 朝陽科技大學資訊管理系所畢業</h3>
                                 </div>
 
                                 <div class="col-12 col-lg-4 px-4 ">
@@ -138,10 +181,12 @@
                 <div class="col-12 ">
                     <div class="timeline-section">
                         <div class="timeline-pointer">
-                            <div class="row">
+                            <div class="row" data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h3 class=" m-2">2022/7 發表國際論文</h3>
+                                    <h3 class=" m-2 mt-0 " >2022/7 發表國際論文</h3>
                                 </div>
 
                                 <div class="col-12 col-lg-4 px-4">
@@ -169,10 +214,12 @@
                 <div class="col-12 ">
                     <div class="timeline-section">
                         <div class="timeline-pointer">
-                            <div class="row">
+                            <div class="row"  data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h3 class=" m-2">2020/7-2021/6 國家中山科學研究院實習</h3>
+                                    <h3 class=" m-2 mt-0 " >2020/7-2021/6 國家中山科學研究院實習</h3>
                                 </div>
 
                                 <div class="col-12 col-lg-4 px-4">
@@ -198,10 +245,12 @@
                 <div class="col-12 ">
                     <div class="timeline-section">
                         <div class="timeline-pointer">
-                            <div class="row">
+                            <div class="row" data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h3 class=" m-2">2016/9-2020/6 大學畢業</h3>
+                                    <h3 class=" m-2 mt-0 " >2016/9-2020/6 大學畢業</h3>
                                 </div>
 
                                 <div class="col-12 col-lg-4 px-4">
@@ -228,10 +277,12 @@
                 <div class="col-12 ">
                     <div class="timeline-section">
                         <div class="timeline-pointer">
-                            <div class="row" class="shadow p-1 mb-3 bg-white rounded">
+                            <div class="row" class="row" data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h3 class=" m-2">2019/12 朝陽科技大學資訊學院畢業專題第一名</h3>
+                                    <h3 class=" m-2 mt-0 " >2019/12 朝陽科技大學資訊學院畢業專題第一名</h3>
                                 </div>
 
                                 <div class="col-12 col-lg-4 px-4">
@@ -258,10 +309,12 @@
                 <div class="col-12 ">
                     <div class="timeline-section">
                         <div class="timeline-pointer">
-                            <div class="row">
+                            <div class="row" class="row" data-aos="fade-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000">
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h3 class=" m-2">2019/12 朝陽科技大學資管系畢業專題第一名</h3>
+                                    <h3 class=" m-2 mt-0 " >2019/12 朝陽科技大學資管系畢業專題第一名</h3>
                                 </div>
 
                                 <div class="col-12 col-lg-4 px-4">
@@ -286,9 +339,14 @@
     </div>
     <div class="container-fluid  bgBlack pb-5" style="background-image: url(images/bg3.jpg);">
         <div class="container">
+            <div data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            >
             <h1 class="py-3 text-light" style="letter-spacing:5px;">作品集</h1>
+        </div>
             <div class="row ">
-                <div class="col-12 col-md-6 col-lg-4 my-2 ">
+<div class="col-12 col-md-6 col-lg-4 my-2 " data-aos="flip-left">
                     <div class="card">
                         <img class="card-img-top" src="images/rice.JPG" alt="Card image cap">
                         <div class="card-body">
@@ -301,7 +359,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="col-12 col-md-6 col-lg-4 my-2" data-aos="flip-left" data-aos-duration="1000">
                     <div class="card">
                         <img class="card-img-top" src="images/rice2.JPG" alt="Card image cap">
                         <div class="card-body">
@@ -317,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="col-12 col-md-6 col-lg-4 my-2" data-aos="flip-left" data-aos-duration="1000">
                     <div class="card">
                         <img class="card-img-top" src="images/head.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -332,7 +390,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="col-12 col-md-6 col-lg-4 my-2" data-aos="flip-left" data-aos-duration="1000">
                     <div class="card">
                         <img class="card-img-top" src="images/ELN.png" alt="Card image cap">
                         <div class="card-body">
@@ -345,7 +403,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="col-12 col-md-6 col-lg-4 my-2" data-aos="flip-left" data-aos-duration="1000">
                     <div class="card">
                         <img class="card-img-top" src="images/daycare.png" alt="Card image cap">
                         <div class="card-body">
@@ -358,7 +416,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 my-2">
+                <div class="col-12 col-md-6 col-lg-4 my-2" data-aos="flip-left" data-aos-duration="1000">
                     <div class="card">
                         <img class="card-img-top" src="images/Nonogram.png" alt="Card image cap">
                         <div class="card-body">
@@ -380,8 +438,15 @@
     <!--輪播-->
     <div class="container-fluid mb-5">
         <div class="container  py-2">
+            <div data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000">
+        
             <h1 class="py-3" style="letter-spacing:5px;">證照</h1>
-            <div class="row d-flex justify-content-center">
+        </div>
+            <div class="row d-flex justify-content-center" data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000">
                 <div class="col-12 col-lg-6">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -485,9 +550,10 @@
         </div>
     </footer>
     <script>
+        AOS.init();
         var myCarousel = document.querySelector('#myCarousel')
         var carousel = new bootstrap.Carousel(myCarousel)
-
+        
     </script>
 </body>
 
