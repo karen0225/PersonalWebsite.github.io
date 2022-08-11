@@ -16,8 +16,8 @@ html,body{
   .timeline-section:after{
     content:"";
     position: absolute;
-    top: 0;
-    bottom: 0; /* top 跟 bottom 設定軸線的方向 */
+    top: 13px;
+    bottom: -13px; /* top 跟 bottom 設定軸線的方向 */
     /* 讓線定位在中央，但是軸線會從左邊 50% 起往右畫 3px，造成軸線偏右 */
     width: 1px;
     transform: translateX(-50%);
@@ -30,7 +30,7 @@ html,body{
   .timeline-pointer:after{
     content:"";
     position: absolute;
-    top: 0;
+    top: 13px;
     bottom: 0;
     width: 10px;
     height: 10px;
