@@ -1,50 +1,63 @@
-html,body{
-    height:100%;
+html,
+body {
+  height: 100%;
 }
+
 .bgBlack {
-    background-color: rgba(0, 0, 0, .7);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center center;
-  }
-.timeline-section{
-    position: relative;
-  }
-  .timeline-section.time_box{
-    height: 100px;
-  }
-  .timeline-section:after{
-    content:"";
-    position: absolute;
-    top: 13px;
-    bottom: -13px; /* top 跟 bottom 設定軸線的方向 */
-    /* 讓線定位在中央，但是軸線會從左邊 50% 起往右畫 3px，造成軸線偏右 */
-    width: 1px;
-    transform: translateX(-50%);
-    /* transform 是 CSS 的變形方式，其中包含位移，這邊用來修正軸線偏右 */
-    background-color: #1B5299; /* 寬度跟顏色把線畫出來 */
-  }
-  .timeline-pointer{
-    position: relative;
-  }
-  .timeline-pointer:after{
-    content:"";
-    position: absolute;
-    top: 13px;
-    bottom: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 3px solid #1B5299;
-    transform: translateX(-50%);
-    background-color: #fff;
-    z-index: 1;
-  }
-  .timeline-section img {
-    max-width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center center;
 }
-  @media (max-width: 992px){
-    .timeline-section:after, .timeline-pointer:after{
-      display: none;
-    }
+
+.timeline-section {
+  position: relative;
+}
+
+.timeline-section.time_box {
+  height: 100px;
+}
+
+.timeline-section:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  bottom: -13px;
+  /* top 跟 bottom 設定軸線的方向 */
+  /* 讓線定位在中央，但是軸線會從左邊 50% 起往右畫 3px，造成軸線偏右 */
+  width: 1px;
+  transform: translateX(-50%);
+  /* transform 是 CSS 的變形方式，其中包含位移，這邊用來修正軸線偏右 */
+  background-color: #1B5299;
+  /* 寬度跟顏色把線畫出來 */
+}
+
+.timeline-pointer {
+  position: relative;
+}
+
+.timeline-pointer:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid #1B5299;
+  transform: translateX(-50%);
+  background-color: #fff;
+  z-index: 1;
+}
+
+.timeline-section img {
+  max-width: 100%;
+}
+
+@media (max-width: 992px) {
+
+  .timeline-section:after,
+  .timeline-pointer:after {
+    display: none;
   }
+}
